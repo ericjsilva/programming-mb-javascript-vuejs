@@ -1,0 +1,201 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+html {
+  font: normal 16px sans-serif;
+  color: #333;
+  background-color: #f9f9f9;
+}
+
+.container {
+  padding: 27px 20px;
+  margin: 30px auto 50px;
+  max-width: 1250px;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  background-color: #fff;
+  box-shadow: 0 0 1px #ccc;
+}
+
+/* Subreddit component */
+
+.subreddit {
+  flex: 0 0 33%;
+  min-width: 400px;
+  padding: 20px 42px;
+}
+
+.subreddit h2 {
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+
+.subreddit .item-list {
+  border-top: 1px solid #bec9d0;
+  padding-top: 20px;
+  list-style: none;
+}
+
+.subreddit .item-list li {
+  margin-bottom: 17px;
+}
+
+/* Post component */
+
+.post {
+  display: flex;
+}
+
+.post .thumbnail {
+  display: block;
+  flex: 0 0 60px;
+  height: 60px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  margin-right: 10px;
+  border-radius: 4px;
+  margin-right: 12px;
+}
+
+.post .details {
+  display: flex;
+  flex-direction: column;
+}
+
+.post .details .title {
+  font-size: 15px;
+  margin-bottom: 3px;
+  color: #04477b;
+}
+
+.post .details .title:visited {
+  color: purple;
+}
+
+.post .details .action-buttons a {
+  font-size: 11px;
+  margin-right: 4px;
+  display: inline-block;
+  color: #666;
+}
+
+.post .details .action-buttons i {
+  font-size: 10px;
+  margin-right: 1px;
+}
+
+@media (max-width: 1250px) {
+
+  .container {
+    justify-content: center;
+    margin: 30px 30px 50px 30px;
+  }
+}
+
+@media (max-width: 500px) {
+
+  .subreddit {
+    min-width: 300px;
+    padding: 20px 15px;
+  }
+}
+
+/*----------------
+	Demo Styles
+-----------------*/
+
+header {
+  background-color: #35495e;
+  box-shadow: 1px 2px 2px rgba(0, 0, 0, 0.15);
+  padding: 20px 30px;
+  box-sizing: border-box;
+}
+
+header .header-limiter {
+  max-width: 1250px;
+  text-align: center;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+}
+
+/* Logo */
+
+header .header-limiter h1 {
+  line-height: 40px;
+  margin: 0;
+  font-size: 18px;
+  font-weight: normal;
+}
+
+header .header-limiter h1 span {
+  color: #41b883;
+}
+
+/* The header links */
+
+header .header-limiter a {
+  color: #ffffff;
+  text-decoration: none;
+}
+
+header .header-limiter nav {
+  line-height: 40px;
+}
+
+header .header-limiter nav a {
+  display: inline-block;
+  padding: 0 5px;
+  text-decoration: none;
+  color: #ffffff;
+  font-size: 14px;
+  opacity: 0.9;
+  font-weight: bold;
+  border-radius: 3px;
+  padding: 0px 25px;
+  background-color: #D6336A;
+}
+
+header .header-limiter nav a:hover {
+  opacity: 1;
+}
+
+header .header-limiter nav a.selected {
+  color: #608bd2;
+  pointer-events: none;
+  opacity: 1;
+}
+
+/* Making the header responsive */
+
+@media all and (max-width: 600px) {
+
+  header {
+    padding: 20px 0;
+  }
+
+  header .header-limiter {
+    flex-direction: column;
+  }
+
+  header .header-limiter h1 {
+    margin: 10px 0 10px;
+    text-align: center;
+    font-size: 16px;
+    line-height: 1;
+  }
+
+}
