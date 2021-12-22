@@ -2,7 +2,7 @@
  Components
  -----------------*/
 
-// Parent | Subreddit component containing a list of 'post' components. 
+// Parent | Subreddit component containing a list of 'post' components.
 var subreddit = Vue.component('subreddit', {
     template: '#subreddit',
     props: ['name'],
