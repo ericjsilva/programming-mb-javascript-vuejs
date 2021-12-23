@@ -2,15 +2,15 @@
 
 Sample Javascript and vue.js programs to be used for BSA Programming Merit Badge.
 
-# Lab 1
+## Lab 1
 
 A simple calculator applications. Basic HTML, JavaScript, and CSS.
 
-# Lab 2
+## Lab 2
 
 A intermediate Hangman game. Introduction to CSS preprocessors, Node.js, arrays, graphics and drawing.
 
-# Lab 3
+## Lab 3
 
 A complex application using vue.js to render feeds from Reddit.com and display in a custom user interface.
 
